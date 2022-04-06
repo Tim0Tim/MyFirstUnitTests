@@ -1,27 +1,34 @@
 using System;
 using Xunit;
+using Calc;
 
 namespace MyFirstUnitTests
 {
     public class UnitTest1
     {
+
         [Fact]
         public void PassTestAdd()
-        {
-            Assert.Equal(4, Add(2, 2));
+        { Calculator calc = new Calculator();
+
+            int answer = calc.Add(2, 2);
+
+            Assert.Equal(4, answer);
+            //Assert.Equal(4, Add(2, 2));
         }
 
+           
         [Fact]
         public void FailTestAdd()
         {
             Assert.Equal(5, Add(2, 2));
         }
 
-        int Add(int x, int y)
+ /*       int Add(int x, int y)
         {
             return x + y;
         }
-
+ */
         [Fact]
         public void PassTestSubtract()
         {
@@ -31,7 +38,7 @@ namespace MyFirstUnitTests
         [Fact]
         public void FailTestSubtract()
         {
-            Assert.Equal(4, Subtract(8, 4));
+            Assert.Equal(5, Subtract(8, 4));
         }
 
         int Subtract(int x, int y)
