@@ -18,7 +18,6 @@ namespace MyFirstUnitTests
             //Assert.Equal(4, Add(2, 2));
         }
 
-           
         [Fact]
         public void FailTestAdd()
         {
@@ -26,11 +25,6 @@ namespace MyFirstUnitTests
             Assert.Equal(5, calc.Add(2, 2));
         }
 
- /*       int Add(int x, int y)
-        {
-            return x + y;
-        }
- */
         [Fact]
         public void PassTestSubtract()
         {

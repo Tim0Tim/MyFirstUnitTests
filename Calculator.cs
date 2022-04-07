@@ -46,7 +46,6 @@ namespace Calc
             }
             return 0;
         }
-            //int TT;
 
         public int Add(int x, int y)
         {
@@ -70,18 +69,7 @@ namespace Calc
         {
             double B = Math.Pow(x, y);
             int z = Convert.ToInt32(B);
-            //int z = B;
             return z;
         }
     } 
 }
-/* Console.WriteLine("X  +-/*  Y");
-            Console.WriteLine("what is the first integer? (X)");
-            x = int.Parse(Console.ReadLine());
-            Console.Write($"{x}");
-            Console.WriteLine("what is the second integer? (Y)");
-            y = int.Parse(Console.ReadLine());
-            Console.Write($"{y}");
-
-            Console.WriteLine("What math function?\n(multiply = *)\n(divide = /)\n(Add = +)\n(Subtract = -)");
-*/
