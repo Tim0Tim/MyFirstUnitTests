@@ -16,7 +16,7 @@ namespace Calc
             x = int.Parse(Console.ReadLine());
             Console.WriteLine("Please input the second number...");
             y = int.Parse(Console.ReadLine());
-            Console.WriteLine("Would you like to divide (1), multiply (2), add (3), or subtract (4)");
+            Console.WriteLine("Would you like to divide (1), multiply (2), add (3), subtract (4), or raise to the power[of second integer] (5)");
             T = int.Parse(Console.ReadLine());
 
             if (T == 1)
@@ -34,6 +34,10 @@ namespace Calc
             else if (T == 4)
             {
                 return calc.Subtract(x, y);
+            }
+            else if (T == 5)
+            {
+                return calc.Power(x, y);
             }
             else
             {
@@ -61,6 +65,13 @@ namespace Calc
         public int Divide(int x, int y)
         {
             return x / y;
+        }
+        public int Power(int x, int y)
+        {
+            double B = Math.Pow(x, y);
+            int z = Convert.ToInt32(B);
+            //int z = B;
+            return z;
         }
     } 
 }
