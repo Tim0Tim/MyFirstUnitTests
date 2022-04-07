@@ -9,7 +9,8 @@ namespace MyFirstUnitTests
          
         [Fact]
         public void PassTestAdd()
-        { Calculator calc = new Calculator();
+        {
+            Calculator calc = new Calculator();
 
             int answer = calc.Add(2, 2);
 
@@ -21,7 +22,8 @@ namespace MyFirstUnitTests
         [Fact]
         public void FailTestAdd()
         {
-            Assert.Equal(5, Add(2, 2));
+            Calculator calc = new Calculator();
+            Assert.Equal(5, calc.Add(2, 2));
         }
 
  /*       int Add(int x, int y)
