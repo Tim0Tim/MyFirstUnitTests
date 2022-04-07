@@ -4,6 +4,10 @@ namespace Calc
 {
     public class Calculator
     {
+        public static void Main()
+        {
+            Console.WriteLine("Hello");
+        }
         //int TT;
         int x;
         int y;
@@ -35,36 +39,10 @@ namespace Calc
             Console.WriteLine("what is the second integer? (Y)");
             y = int.Parse(Console.ReadLine());
             Console.Write($"{y}");
+
+            Console.WriteLine("What math function?\n(multiply = *)\n(divide = /)\n(Add = +)\n(Subtract = -)");
         }
-      
-       
-       // static void Main()
-       // {
-       //     Console.WriteLine($"{TT}");
-       // }
-        
+
+
     } 
 }
-//stuff to make a change, sure why not.
-
-//  static void Main()
-//  {
-//      int x;
-//      int y;
-//      int T;
-
-//      Console.WriteLine("Please input the first number...");
-//      x = int.Parse(Console.ReadLine());
-//      Console.WriteLine("Please input the second number...");
-//      y = int.Parse(Console.ReadLine());
-//      Console.WriteLine("Would you like to divide (1), multiply (2), add (3), or subtract (4)");
-//      T = int.Parse(Console.ReadLine());
-
-//  if(T == 1)
-//  {
-//      Divide = return x / y;
-//  }
-
-
-
-//    }
