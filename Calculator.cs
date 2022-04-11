@@ -21,23 +21,23 @@ namespace Calc
 
             if (T == 1)
             {
-                return calc.Divide(x, y);
+                Console.WriteLine($"\n Awnser = {calc.Divide(x, y)}");
             }
             else if (T == 2)
             {
-                return calc.Multiply(x,y);
+                Console.WriteLine($"\n Awnser = {calc.Multiply(x, y)}");
             }
             else if (T == 3)
             {
-                return calc.Add(x,y);
+                Console.WriteLine($"\n Awnser = {calc.Add(x, y)}");
             }
             else if (T == 4)
             {
-                return calc.Subtract(x, y);
+                Console.WriteLine($"\n Awnser = {calc.Subtract(x, y)}");
             }
             else if (T == 5)
             {
-                return calc.Power(x, y);
+                Console.WriteLine($"\n Awnser = {calc.Power(x, y)}");
             }
             else
             {
